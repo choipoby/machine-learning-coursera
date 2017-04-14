@@ -29,6 +29,7 @@ a2 = [ones(size(a2,1), 1), a2]
 z3 = a2*Theta2'
 h = sigmoid(z3)
 
+% max(matrix, [], 2) returns [probability, index]
 [temp, p] = max(h, [], 2)
 
 
